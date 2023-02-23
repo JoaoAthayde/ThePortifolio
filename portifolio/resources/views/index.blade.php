@@ -1,4 +1,4 @@
-@extends('layouts.layouts')
+@extends('layouts.layout')
 @section('title','João')
 @section('content')
 <x-system.navbar/>

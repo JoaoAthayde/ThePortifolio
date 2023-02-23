@@ -16,7 +16,7 @@
                     <a class="link" href="#testmonial">Testmonial</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#blog">Blog</a>
+                <a href="{{ route('login') }}" class="link">Login</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
