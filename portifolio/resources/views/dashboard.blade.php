@@ -15,11 +15,11 @@
       </li>
     
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" >
           About
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">ADD</a></li>
+          <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalAbout">ADD</a></li>
           <li><a class="dropdown-item" href="#">lIST</a></li>
         </ul>
     </li>
@@ -28,7 +28,7 @@
         Service
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">ADD</a></li>
+          <li><a class="dropdown-item" href="#"data-toggle="modal" data-target="#modalService">ADD</a></li>
           <li><a class="dropdown-item" href="#">lIST</a></li>
         </ul>
     </li>
@@ -37,7 +37,7 @@
         Portfolio
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">ADD</a></li>
+          <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalPortfolio">ADD</a></li>
           <li><a class="dropdown-item" href="#">lIST</a></li>
         </ul>
     </li>
@@ -46,7 +46,7 @@
         Testmonial
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">ADD</a></li>
+          <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalTestimonials">ADD</a></li>
           <li><a class="dropdown-item" href="#">lIST</a></li>
         </ul>
     </li>
@@ -55,15 +55,31 @@
         Signature
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">ADD</a></li>
+          <li><a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalSignature">ADD</a></li>
           <li><a class="dropdown-item" href="#">lIST</a></li>
         </ul>
     </li>
     </ul>
   </div>
 </nav>
+<!-- fim navbar dashboard-->
+@php
+    $x = "liste";
+@endphp
 
+@if  ($x == "teste")
+    <p>rodou</p>
 
+@elseif ($x == "liste")
+<x-dashboard.liste/>
+@else
+@endif
+
+<x-dashboard.about-modal/>
+<x-dashboard.portfolio-modal/>
+<x-dashboard.service-modal/>
+<x-dashboard.signature-modal/>
+<x-dashboard.testimonials-modal/>
 
 
 
